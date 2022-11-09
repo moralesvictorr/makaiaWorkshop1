@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --orange: hsl(25, 97%, 53%);
+  --ligth-gray: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --medium-dark-blue: hsla(210, 6%, 25%, 0.676);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  background-repeat: no-repeat;
+  font-family: 'Overpass', sans-serif;
+}
+
+.general-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* PRIMER CONTAINER */ 
+
+.card1-container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-blue) ;
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+  gap: 20px;
+}
+
+.card1-container .star-container{
+  background-color: var(--medium-dark-blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:25px 5px 5px 25px;
+  border-radius: 50%;
+}
+
+.star-container img{
+  width: 50%;
+}
+
+.text-container{
+  color: white;
+  font-size: 16px;
+  margin:25px 5px 5px 25px;
+}
+
+.text-container p{
+  margin-top: 10px;
+  color: var(--ligth-gray);
+}
+
+.btn-row-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn-row-container button{
+  background-color: var(--medium-dark-blue);
+  color: var(--ligth-gray);
+  font-weight: bold;
+  font-size: medium;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+.btn-row-container button:hover{
+  background-color: var(--ligth-gray);
+  color: white;
+}
+
+.btnSelection:focus{
+  background-color: var(--orange);
+  color: white;
+}
+
+.btnSelection:active { 
+    /* EFECTO EN CLICK: Se vuelve mas pequeño */
+  transform: scale(0.96);
+  /* Sombra */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.30); 
+}
+
+.btn-container{
+  margin: auto;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container .btn{
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 300;
+  font-size: 2vh;
+  background-color: var(--orange);
+  color: white;
+  box-shadow: 1px 1px 0.8px rgba(0, 0, 0, 0.25);
+}
+
+.btn-container .btn:hover{
+  background-color: white;
+  color: var(--orange);
+}
+
+.btn-container .btn:active { 
+  /* EFECTO EN CLICK: Se vuelve mas pequeño */
+transform: scale(0.97);
+/* Sombra */
+box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.30); 
+}
+/* SEGUNDO CONTAINER */
+
+.card2-container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-blue) ;
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+  gap: 12px;
+  display: none;
+}
+
+.img-container{
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 1px;
+}
+
+.selection-cotainer{
+  background-color: var(--medium-dark-blue);
+  margin: auto;
+  margin-top: 20px;
+  width: 180px;
+  padding: 10px;
+  border-radius: 25px;
+  color: var(--orange);
+  text-align: center;
+}
+
+.text2-container{
+  font-size: 16px;
+  margin: auto;
+  width: 80%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+.text2-container p{
+  color: var(--ligth-gray);
+  text-align: center;
+}
+
+
+@media screen and (max-width: 375px) {
+  .card1-container{
+    width: 85%;
+    height: 320px;
+  }
+  .card1-container .star-container{
+    width: 35px;
+    height: 35px;
+    margin:15px 0px 0px 15px;
+  }
+  .text-container{
+    font-size: 12px;
+  }
+
+  .btn-row-container button{
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .btn-container .btn{
+    width: 85%;
+  }
+
+  .card2-container{
+    width: 85%;
+    height: 320px;
+  }
+
+  .img-container img{
+    width: 90%;
+    height: 90%;
+  }
+
+  .selection-cotainer{
+    margin-top: 5px;
+    width: 175px;
+    padding: 5px;
+  }
+  .text2-container{
+    font-size: 12px;
+  }
+
+  .text2-container h1{
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
